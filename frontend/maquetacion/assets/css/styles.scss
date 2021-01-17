@@ -1,0 +1,40 @@
+$first-color: #bfb79f;
+$second-color: #1c4859;
+$third-color: #a67041;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $first-color;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 56px;
+  background-color: $second-color;
+  color: $third-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-menu {
+  /* background-color: $third-color; */
+
+  &__list {
+    padding: 0;
+    display: flex;
+  }
+
+  &__list-element {
+    list-style: none;
+    margin: 0 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $third-color;
+  }
+}

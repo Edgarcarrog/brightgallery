@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bfb79f;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 56px;
+  background-color: #1c4859;
+  color: #a67041;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-menu {
+  /* background-color: $third-color; */
+}
+.main-menu__list {
+  padding: 0;
+  display: flex;
+}
+.main-menu__list-element {
+  list-style: none;
+  margin: 0 15px;
+}
+.main-menu__link {
+  text-decoration: none;
+  color: #a67041;
+}
+
+/*# sourceMappingURL=styles.css.map */
