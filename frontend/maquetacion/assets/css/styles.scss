@@ -1,4 +1,4 @@
-$first-color: #bfb79f;
+$first-color: #dfdbcf;
 $second-color: #1c4859;
 $third-color: #a67041;
 
@@ -11,7 +11,9 @@ body {
 }
 
 .header {
-  height: 56px;
+  position: sticky;
+  top: 0px;
+  height: 45px;
   background-color: $second-color;
   color: $third-color;
   display: flex;
@@ -21,7 +23,6 @@ body {
 }
 
 .main-menu {
-  /* background-color: $third-color; */
 
   &__list {
     padding: 0;
@@ -36,5 +37,20 @@ body {
   &__link {
     text-decoration: none;
     color: $third-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+  }
+}
+
+.gallery-section {
+  &__card {
+  }
+
+  &__image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 3px;
   }
 }

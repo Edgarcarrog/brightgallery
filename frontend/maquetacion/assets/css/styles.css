@@ -1,13 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #bfb79f;
+  background-color: #dfdbcf;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
 .header {
-  height: 56px;
+  position: sticky;
+  top: 0px;
+  height: 45px;
   background-color: #1c4859;
   color: #a67041;
   display: flex;
@@ -16,9 +18,6 @@ body {
   padding: 0 20px;
 }
 
-.main-menu {
-  /* background-color: $third-color; */
-}
 .main-menu__list {
   padding: 0;
   display: flex;
@@ -30,6 +29,16 @@ body {
 .main-menu__link {
   text-decoration: none;
   color: #a67041;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.gallery-section__image {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */
