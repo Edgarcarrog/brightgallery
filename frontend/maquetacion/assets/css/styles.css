@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #dfdbcf;
+  background-color: #f1eee6;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
@@ -34,6 +34,27 @@ body {
   font-size: 0.9em;
 }
 
+.gallery-section {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery-section__description {
+  width: 25%;
+  margin: 0 20px;
+}
+.gallery-section__card-container {
+  width: 75%;
+  margin: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+  grid-gap: 35px 45px;
+  justify-content: flex-end;
+}
+.gallery-section__card {
+  margin: 0 20px;
+}
 .gallery-section__image {
   width: 230px;
   height: 230px;

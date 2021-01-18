@@ -1,4 +1,4 @@
-$first-color: #dfdbcf;
+$first-color: #f1eee6;
 $second-color: #1c4859;
 $third-color: #a67041;
 
@@ -23,7 +23,6 @@ body {
 }
 
 .main-menu {
-
   &__list {
     padding: 0;
     display: flex;
@@ -44,7 +43,27 @@ body {
 }
 
 .gallery-section {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__description {
+    width: 25%;
+    margin: 0 20px;
+  }
+
+  &__card-container {
+    width: 75%;
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+    grid-gap: 35px 45px;
+    justify-content: flex-end;
+  }
+
   &__card {
+    margin: 0 20px;
   }
 
   &__image {
