@@ -1,6 +1,6 @@
-$first-color: #f1eee6;
-$second-color: #1c4859;
-$third-color: #a67041;
+$first-color: #f3f2ed;
+$second-color: #0b2b38;
+$third-color: #d39662;
 
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
 .header {
   position: sticky;
   top: 0px;
-  height: 45px;
+  height: 50px;
   background-color: $second-color;
   color: $third-color;
   display: flex;
@@ -42,8 +42,16 @@ body {
   }
 }
 
+.title-container {
+  padding: 50px 30px;
+
+  &__title {
+    margin: 0 20px;
+  }
+}
+
 .gallery-section {
-  padding: 0 30px;
+  padding: 100px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,17 +61,24 @@ body {
     margin: 0 20px;
   }
 
+  &__title {
+    padding: 0;
+    margin: 0px;
+  }
+
   &__card-container {
     width: 75%;
-    margin: 0 30px;
+    margin: 0 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+    grid-template-columns: repeat(auto-fill, 230px);
     grid-gap: 35px 45px;
     justify-content: flex-end;
   }
 
   &__card {
-    margin: 0 20px;
+    height: 230px;
+    margin: 0;
+    padding: 0;
   }
 
   &__image {
@@ -72,4 +87,11 @@ body {
     object-fit: cover;
     border-radius: 3px;
   }
+}
+
+.divider {
+  height: 1px;
+  margin: 0 50px;
+  border-width: 0;
+  background-color: $second-color;
 }

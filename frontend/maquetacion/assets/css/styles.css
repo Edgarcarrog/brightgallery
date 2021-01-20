@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f1eee6;
+  background-color: #f3f2ed;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
@@ -9,9 +9,9 @@ body {
 .header {
   position: sticky;
   top: 0px;
-  height: 45px;
-  background-color: #1c4859;
-  color: #a67041;
+  height: 50px;
+  background-color: #0b2b38;
+  color: #d39662;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,14 +28,21 @@ body {
 }
 .main-menu__link {
   text-decoration: none;
-  color: #a67041;
+  color: #d39662;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9em;
 }
 
+.title-container {
+  padding: 50px 30px;
+}
+.title-container__title {
+  margin: 0 20px;
+}
+
 .gallery-section {
-  padding: 0 30px;
+  padding: 100px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,22 +51,35 @@ body {
   width: 25%;
   margin: 0 20px;
 }
+.gallery-section__title {
+  padding: 0;
+  margin: 0px;
+}
 .gallery-section__card-container {
   width: 75%;
-  margin: 0 30px;
+  margin: 0 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+  grid-template-columns: repeat(auto-fill, 230px);
   grid-gap: 35px 45px;
   justify-content: flex-end;
 }
 .gallery-section__card {
-  margin: 0 20px;
+  height: 230px;
+  margin: 0;
+  padding: 0;
 }
 .gallery-section__image {
   width: 230px;
   height: 230px;
   object-fit: cover;
   border-radius: 3px;
+}
+
+.divider {
+  height: 1px;
+  margin: 0 50px;
+  border-width: 0;
+  background-color: #0b2b38;
 }
 
 /*# sourceMappingURL=styles.css.map */
