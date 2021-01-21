@@ -10,8 +10,8 @@ body {
   position: sticky;
   top: 0px;
   height: 50px;
-  background-color: #0b2b38;
-  color: #d39662;
+  background-color: #02141b;
+  color: #bf8d30;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +28,9 @@ body {
 }
 .main-menu__link {
   text-decoration: none;
-  color: #d39662;
+  color: #bf8d30;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.9em;
 }
 
@@ -54,6 +54,9 @@ body {
 .gallery-section__title {
   padding: 0;
   margin: 0px;
+}
+.gallery-section__info {
+  padding: 15px 0;
 }
 .gallery-section__card-container {
   width: 75%;
@@ -79,7 +82,41 @@ body {
   height: 1px;
   margin: 0 50px;
   border-width: 0;
-  background-color: #0b2b38;
+  background-color: #02141b;
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #02141b;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__profile {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.footer__author {
+  margin: 0;
+  color: #bf8d30;
+}
+.footer__author a {
+  text-decoration: none;
+  color: #bf8d30;
+}
+.footer__contact {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo-container {
+  margin: 0 10px;
+}
+.footer__logo {
+  height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
